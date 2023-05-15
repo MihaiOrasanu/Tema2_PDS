@@ -71,7 +71,7 @@ figure(1), freqs(bs, as),
 %afisarea caracteristicilor filtrului digital rezultat
 [hd,wd] = freqz(bd,ad);
 figure(3), freqz(bd,ad), title('Raspunsul in frecventa al filtrului digital')
-ylim([-80 20])
+ylim([-25 5])
 figure(4), zplane(bd,ad), title('Diagrama poli zerouri a filtrului digital')
 %Caracteristica amplitudine - frecventa a filtrului digital rezultat
 F = wd*Fs/(2*pi);
